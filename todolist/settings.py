@@ -66,7 +66,7 @@ DATABASES = {
         'ENGINE': 'mysql.connector.django',
         'NAME': 'app_db',
         'USER': 'app_user',
-        'PASSWORD': '1234',
+        'PASSWORD': os.getenv('MYSQL_PASSWORD'),
         'HOST': '172.17.0.2',  # You can use a different host in your MySQL server is on a remote machine.
         'PORT': '',  # Leave this empty to use the default MySQL port (3306).
     }
