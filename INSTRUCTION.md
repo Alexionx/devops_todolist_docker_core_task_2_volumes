@@ -12,7 +12,7 @@ docker run -d \
 
 ```
 docker run -d --name todoapp-container \
-  -e DB_HOST=3306 \
+  -e DB_HOST=172.17.0.2 \
   -p 8000:8000 \
   todoapp:2.0.0
 ```
